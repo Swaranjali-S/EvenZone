@@ -1,0 +1,232 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Customs */
+body {
+  background-color: #F0F8FF;
+    color: maroon;
+    font-family: 'Cabin', sans-serif;
+                margin: 25px;
+  }
+
+/* Grid */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    width: 960px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+/* Grid */
+section .col-1 {
+    float: left;
+    margin: 0 1.5%;
+    width: 30%;
+}
+section .col-2{
+    float: right;
+    margin: 0 1.5%;
+    width: 30%;
+}
+section .col-3{
+    float: right;
+    margin: 0 1.5%;
+    width: 30%;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.grid:before,
+.grid:after {
+  content: "";
+  display: table;
+}
+.grid:after {
+  clear: both;
+}
+.grid {
+  clear: both;
+  *zoom: 1;
+}
+
+/* Typography */
+ 
+ h3, h4 {
+    color: #8B3A3A;
+}
+ h1, h3, h4, div {
+ margin-bottom: 22px;
+ }
+
+ h1 {
+    font-size: 36px;
+    line-height: 64px;
+       color: white;
+       
+        padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  h2{
+      padding: 12px;
+      font-weight: bold;
+      font-size: 40px;
+  }
+  h3 {
+    font-size: 21px;
+  }
+  h4 {
+    font-size: 38px;
+  }
+  h3.s{
+    text-align: center;
+    font-weight: bold;
+
+  }
+  form{
+    text-align: center;
+  font-size: larger;
+  }
+
+    input[type=text]:focus{
+    border: 3px solid #555;
+    }
+    div.backg{
+      padding: 10px 20px;
+      font-size: larger;
+      font-weight: bold;
+    }
+    div.polaroid{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+     
+      width: 50%;
+      background-color: wheat;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+             
+    }
+    div.box{
+      text-align: center;
+      padding: 10px 20px;
+    }
+    
+/* Anchor Link*/
+a {
+        text-decoration: none;
+            }
+
+a:hover {
+    color: lightskyblue;
+}
+
+
+/* Primary Header*/
+
+    .begin {
+        border-top: 8px;
+        font-size: 48px;
+        font-weight: 50;
+        letter-spacing: .5px;
+        line-height: 34px;
+        padding: 40px 0 22px 0;
+        
+            }
+            .primary-nav {
+                font-size: 28px;
+                font-weight: 400;
+                letter-spacing: 1px;
+            }
+/* Footer */
+.primary-footer {
+    padding-bottom: 44px;
+    padding-top: 44px;
+}
+
+/*Link list alignment*/
+.begin {
+  text-align: left;
+    font-weight: bold;
+}
+.nav{
+  text-align: center;
+  padding-bottom: 22px;
+}
+.sign{
+    text-align: right;
+}
+.row {
+  min-width: 960px;
+  background-color: hsla(60,100%,50%,0.2);
+  padding: 66px 0 44px 0;
+  font-weight: bold;
+}
+  /* Content tags */
+  .backgim {
+      color: white;
+  }
+
+p.policy{
+    
+    padding-bottom: 20px ;
+}
+
+.r1, .r2, .r3{
+  display: flex;
+}
+.column{
+  flex: 33.33%;
+  padding: 0 5px 0 5px;  
+}

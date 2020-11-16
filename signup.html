@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="decor.css">
+
+</head>
+<header class="primary container group">
+    <h1 class="begin" style="font-family: 'Monoton', cursive;">
+        <a href="index.html">&emsp;&emsp;EvenzOne</a>
+    </h1>
+    
+    <h4 class="sign">
+        <a href="sign.js">Sign-Up
+            </a>
+        </h4> <!--link and js-->
+    
+    <nav class="nav primary-nav">
+    <ul>
+        <tr>
+            <td><a href="index.html">Home</a></td>
+            <td><a href="services.html">Services</a></td>
+            <td><a href="gallery.html">Gallery</a></td>
+            <td><a href="contact.html">Contact Us</a></td>
+        </tr>
+    </nav>
+    </header>
+    <hr>
+    <script>  
+        function validateform(){  
+        var name=document.f1.n1.value;  
+        var pas1=document.f1.p1.value;  
+        var pas2=document.f1.p2.value;  
+       
+                if (name==null || name==""){  
+          alert("Name can't be blank");  
+          return false;  
+        }else if(pas1.length<6){  
+          alert("Password must be at least 6 characters long.");  
+          return false;  
+          }  else if(pas1!==pas2)
+          alert("Passwords don't match. Try Again");
+        } 
+        </script>  
+        <body>  <br>
+            <h3 class="s"> Sign-up form</h3> <br>
+
+        <form class="container" name="f1" method="post" action="/" onsubmit="return validateform()" >  
+        Name:&emsp;<br>
+        <input type="text" name="n1"><br>  <br>
+        Password:&emsp; <br>
+        <input type="password" name="p1"><br><br>
+        Confirm Password:&emsp; <br>
+        <input type="password" name="p2"><br>  <br>
+        
+        Phone Number:&emsp; <br>
+        <input type="number" name="pn"><br><br>
+
+        E-mail:&emsp; <br>
+        <input type="email" name="email"><br><br>
+        
+        <input type="submit" value="Register">  <br>
+        </form>  
+        
+        <footer class="primary container group primary-footer">
+            <small>&copy; EvenzOne</small>
+            <nav class="nav">
+                <ul>
+                    <tr>
+                        <td><a href="index.html">Home</a></td>
+                        <td><a href="services.html">Services</a></td>
+                        <td><a href="gallery.html">Gallery</a></td>
+                        <td><a href="contact.html">Contact Us</a></td>
+                    </tr>
+                </ul>
+                </nav>
+                <div>
+                    <br>
+                    <h3>About Us</h3>
+                    <div>
+            
+                    </div>
+                </div>
+                <br>
+                <div class="f1">
+                <form action="/" method="GET">
+                    <h3> Subscribe to our newsletter to keep updated! </h3>
+                    <div> Get our Event images, Decor arrangement palettes and so much more and give your inputs on inspiration</div>
+               <br> <label for="email"> Email</label><br>
+                    <input id="email" type="email"><br><br>
+                    <button>Submit</button>  
+                </form>
+                </div>
+                </footer>
+</body>
+</html>
